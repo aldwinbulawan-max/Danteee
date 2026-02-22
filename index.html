@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYS_TERMINAL</title>
+
+<style>
+body {
+  margin: 0;
+  background: #000;
+  color: #00ff88;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.status {
+  margin: 5px 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background: #00ff88;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Hide YouTube player */
+#bgMusic {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Initialize System<span class="cursor"></span></h1>
+
+  <div class="status">Terminal Authentication Required</div>
+  <div class="status">SYS_READY</div>
+  <div class="status">AUTH_PENDING</div>
+  <div class="status">LINK_ACTIVE</div>
+
+  <br>
+
+  <div class="status">OWNER: Dante</div>
+  <div class="status">BIO: iloveyou yara</div>
+  <div class="status">Now Playing: Background Music</div>
+
+  <br>
+
+  <div class="status">1,337 Visitors</div>
+</div>
+
+<!-- YouTube Background Music -->
+<iframe id="bgMusic"
+  src="https://www.youtube.com/embed/QHx1-CM1nvk?autoplay=1&loop=1&playlist=QHx1-CM1nvk&controls=0"
+  allow="autoplay">
+</iframe>
+
+</body>
+</html>
